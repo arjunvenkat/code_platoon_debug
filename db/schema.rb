@@ -13,24 +13,23 @@
 
 ActiveRecord::Schema.define(version: 20141111035429) do
 
-  create_table "dishes", force: true do |t|
+  create_table "dishes", force: :cascade do |t|
     t.string   "name"
     t.string   "cuisine"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "neighborhoods", force: true do |t|
+  create_table "neighborhoods", force: :cascade do |t|
     t.string   "name"
     t.string   "city"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "venues", force: true do |t|
+  create_table "venues", force: :cascade do |t|
     t.string   "name"
     t.string   "address"
-    t.string   "neighborhood"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

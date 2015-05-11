@@ -17,7 +17,7 @@ class NeighborhoodsController < ApplicationController
 
     @neighborhood.save
 
-    render('show')
+    redirect_to("/neighborhoods")
   end
 
   def edit_form
@@ -29,12 +29,14 @@ class NeighborhoodsController < ApplicationController
 
     @neighborhood.save
 
-    render('show')
+    redirect_to("/neighborhoods/#{@neighborhood.id}")
   end
 
   def destroy
     @neighborhood = Neighborhood.find(params[:id])
 
     @neighborhood.destroy
+
+    redirect_to("/neighborhoods")
   end
 end

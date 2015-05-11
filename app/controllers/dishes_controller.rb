@@ -17,7 +17,7 @@ class DishesController < ApplicationController
 
     @dish.save
 
-    render('show')
+    redirect_to("/dishes")
   end
 
   def edit_form
@@ -32,10 +32,12 @@ class DishesController < ApplicationController
 
     @dish.save
 
-    render('show')
+    redirect_to("/dishes/#{@dish.id}")
   end
 
   def destroy
     @dish = Dish.find(params[:id])
+
+    redirect_to("/dishes")
   end
 end

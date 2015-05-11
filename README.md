@@ -1,9 +1,11 @@
-# Resource Practice
+# Spring 2015 Midterm, Part 2
+
+## Introduction
 
 This application has 3 database-backed web CRUD resources:
 
  - dishes (columns: id, name, cuisine)
- - venues (columns: id, name, address, neighborhood)
+ - venues (columns: id, name, address)
  - neighborhoods (columns: id, name, city)
 
 As usual, each resource has 7 "golden" actions that allow users to interact with it:
@@ -33,7 +35,7 @@ Here is a fully functional version of the app, for your reference.
 
 https://best-of-everything.herokuapp.com/
 
-Make yours work like it. Your local app is using a light Bootswatch, and the reference app is using a dark Bootswatch; don't get confused between the tabs as you try to check your work.
+Make yours work like it. Your local app is using a light Bootswatch, and the reference app is using a dark Bootswatch so that you don't get confused between tabs as you try to check your work.
 
 ## Setup
 
@@ -45,9 +47,7 @@ Make yours work like it. Your local app is using a light Bootswatch, and the ref
  1. `rake db:seed` (to pre-populate your tables with some data, so we can get straight to work. This step may take a while on Windows machines. You can open a new Command Line window to continue working while it runs.)
  1. `rails server`
 
-Navigate to
-
-http://localhost:3000
+Navigate to [http://localhost:3000](http://localhost:3000)
 
 You should see a list of dishes. The `Dishes#index` action is functional, and I have set it to be the root URL.
 

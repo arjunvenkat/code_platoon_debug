@@ -17,9 +17,8 @@ class VenuesController < ApplicationController
     @venue = Venue.new
     @venue.name = params[:name]
     @venue.address = params[:address]
-    @venue.neighborhood = params[:neighborhood]
 
-    render('show')
+    redirect_to("/venues")
   end
 
   def edit_form
@@ -31,14 +30,15 @@ class VenuesController < ApplicationController
 
     @venue.name = params[:name]
     @venue.address = params[:address]
-    @venue.neighborhood = params[:neighborhood]
 
     @venue.save
 
-    render('show')
+    redirect_to("/venues/#{@venue.id}")
   end
 
   def destroy
     @venue.destroy
+
+    redirect_to("/venues")
   end
 end
