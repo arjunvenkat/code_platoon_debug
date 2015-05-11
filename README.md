@@ -34,7 +34,7 @@ There are bugs in many of the 21 actions required to CRUD our 3 resources. **You
 
 Here is a fully functional version of the app, for your reference.
 
-https://best-of-everything.herokuapp.com/
+https://verybest-target.herokuapp.com/
 
 Make yours work like it. Your local app is using a light Bootswatch, and the reference app is using a dark Bootswatch so that you don't get confused between tabs as you try to check your work.
 
