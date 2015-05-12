@@ -25,9 +25,9 @@ As usual, each resource has 7 "golden" actions that allow users to interact with
 ### DELETE
  - destroy
 
-There are bugs in many of the 21 actions required to CRUD our 3 resources. **Your job** is to debug them all until you can create, read, update, and delete each of dishes, venues, and neighborhoods without running into any issues.
+There are bugs in many of the 21 actions required to CRUD our 3 resources. **Your primary job** is to debug them all until you can create, read, update, and delete each of dishes, venues, and neighborhoods without running into any issues.
 
-**For extra credit**,
+Then,
 
  - On the show page for each venue, display the correct latitude and longitude of the venue based on the value in its address column. Currently, every venue shows the same latitude and longitude, which is wrong. Use Google's Geocoding API.
  - Fix the embedded Google Map on the show page for each venue to be centered on its real address. Currently, every map is centered on the same location, which is wrong. Replace the static bits of the markup that you want to be dynamic with embedded Ruby.
